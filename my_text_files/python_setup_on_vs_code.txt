@@ -1,0 +1,218 @@
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls -
+ls: cannot access '-': No such file or directory
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls -a
+./  ../
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls -a
+./  ../  .venv/
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ tree
+bash: tree: command not found
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls -r
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ ls -R
+.:
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ cd .venv/
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv
+$ ls -al
+total 10
+drwxr-xr-x 1 MicroApt 197121   0 Oct 29 22:21 ./
+drwxr-xr-x 1 MicroApt 197121   0 Oct 29 22:20 ../
+-rw-r--r-- 1 MicroApt 197121   1 Oct 29 22:21 .gitignore
+drwxr-xr-x 1 MicroApt 197121   0 Oct 29 22:20 Include/
+drwxr-xr-x 1 MicroApt 197121   0 Oct 29 22:20 Lib/
+-rw-r--r-- 1 MicroApt 197121 478 Oct 29 22:20 pyvenv.cfg
+drwxr-xr-x 1 MicroApt 197121   0 Oct 29 22:21 Scripts/
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv
+$ cd Scripts/
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ ls -la
+total 901
+drwxr-xr-x 1 MicroApt 197121      0 Oct 29 22:21 ./
+drwxr-xr-x 1 MicroApt 197121      0 Oct 29 22:21 ../
+-rw-r--r-- 1 MicroApt 197121   1781 Oct 29 22:21 activate      
+-rw-r--r-- 1 MicroApt 197121   1014 Oct 29 22:21 activate.bat  
+-rw-r--r-- 1 MicroApt 197121  26199 Oct 29 22:21 Activate.ps1  
+-rw-r--r-- 1 MicroApt 197121    393 Oct 29 22:21 deactivate.bat
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip.exe*      
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.11.exe*  
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.exe*     
+-rwxr-xr-x 1 MicroApt 197121 274712 Oct 29 22:20 python.exe*
+-rwxr-xr-x 1 MicroApt 197121 263448 Oct 29 22:20 pythonw.exe*
+
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ source activate
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ type python
+python is \Users\MicroApt\my_python_project01\.venv/Scripts/python
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ cd ../..
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ type python
+python is \Users\MicroApt\my_python_project01\.venv/Scripts/python
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ pip install boto3
+Collecting boto3
+  Downloading boto3-1.35.50-py3-none-any.whl.metadata (6.7 kB)
+Collecting botocore<1.36.0,>=1.35.50 (from boto3)
+  Downloading botocore-1.35.50-py3-none-any.whl.metadata (5.7 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3)
+  Using cached jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.11.0,>=0.10.0 (from boto3)
+  Using cached s3transfer-0.10.3-py3-none-any.whl.metadata (1.7 kB)
+Collecting python-dateutil<3.0.0,>=2.1 (from botocore<1.36.0,>=1.35.50->boto3)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.36.0,>=1.35.50->boto3)
+  Using cached urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1->botocore<1.36.0,>=1.35.50->boto3)
+  Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Downloading boto3-1.35.50-py3-none-any.whl (139 kB)
+Downloading botocore-1.35.50-py3-none-any.whl (12.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.6/12.6 MB 8.2 MB/s eta 0:00:00
+Using cached jmespath-1.0.1-py3-none-any.whl (20 kB)
+Using cached s3transfer-0.10.3-py3-none-any.whl (82 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached urllib3-2.2.3-py3-none-any.whl (126 kB)
+Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: urllib3, six, jmespath, python-dateutil, botocore, s3transfer, boto3
+Successfully installed boto3-1.35.50 botocore-1.35.50 jmespath-1.0.1 python-dateutil-2.9.0.post0 s3transfer-0.10.3 six-1.16.0 urllib3-2.2.3
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01
+$ cd .venv/
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv
+$ cd Scripts/
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ ls -l
+total 897
+drwxr-xr-x 1 MicroApt 197121      0 Oct 29 22:27 __pycache__/
+-rw-r--r-- 1 MicroApt 197121   1781 Oct 29 22:21 activate
+-rw-r--r-- 1 MicroApt 197121   1014 Oct 29 22:21 activate.bat
+-rw-r--r-- 1 MicroApt 197121  26199 Oct 29 22:21 Activate.ps1
+-rw-r--r-- 1 MicroApt 197121    393 Oct 29 22:21 deactivate.bat
+-rwxr-xr-x 1 MicroApt 197121   1742 Oct 29 22:27 jp.py*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip.exe*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.11.exe*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.exe*
+-rwxr-xr-x 1 MicroApt 197121 274712 Oct 29 22:20 python.exe*
+-rwxr-xr-x 1 MicroApt 197121 263448 Oct 29 22:20 pythonw.exe*
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ pip install awscli
+Collecting awscli
+  Downloading awscli-1.35.16-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: botocore==1.35.50 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from awscli) (1.35.50)
+Collecting docutils<0.17,>=0.10 (from awscli)
+  Downloading docutils-0.16-py2.py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: s3transfer<0.11.0,>=0.10.0 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from awscli) (0.10.3)
+Collecting PyYAML<6.1,>=3.10 (from awscli)
+  Downloading PyYAML-6.0.2-cp311-cp311-win_amd64.whl.metadata (2.1 kB)
+Collecting colorama<0.4.7,>=0.2.5 (from awscli)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting rsa<4.8,>=3.1.2 (from awscli)
+  Downloading rsa-4.7.2-py3-none-any.whl.metadata (3.6 kB)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from botocore==1.35.50->awscli) (1.0.1)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from botocore==1.35.50->awscli) (2.9.0.post0)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from botocore==1.35.50->awscli) (2.2.3)
+Collecting pyasn1>=0.1.3 (from rsa<4.8,>=3.1.2->awscli)
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: six>=1.5 in c:\users\microapt\my_python_project01\.venv\lib\site-packages (from 
+python-dateutil<3.0.0,>=2.1->botocore==1.35.50->awscli) (1.16.0)
+Downloading awscli-1.35.16-py3-none-any.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 1.4 MB/s eta 0:00:00
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading docutils-0.16-py2.py3-none-any.whl (548 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 548.2/548.2 kB 2.0 MB/s eta 0:00:00
+Downloading PyYAML-6.0.2-cp311-cp311-win_amd64.whl (161 kB)
+Downloading rsa-4.7.2-py3-none-any.whl (34 kB)
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Installing collected packages: PyYAML, pyasn1, docutils, colorama, rsa, awscli
+Successfully installed PyYAML-6.0.2 awscli-1.35.16 colorama-0.4.6 docutils-0.16 pyasn1-0.6.1 rsa-4.7.2
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ ls -l
+total 1602
+drwxr-xr-x 1 MicroApt 197121      0 Oct 29 22:28 __pycache__/
+-rw-r--r-- 1 MicroApt 197121   1781 Oct 29 22:21 activate
+-rw-r--r-- 1 MicroApt 197121   1014 Oct 29 22:21 activate.bat
+-rw-r--r-- 1 MicroApt 197121  26199 Oct 29 22:21 Activate.ps1
+-rwxr-xr-x 1 MicroApt 197121    862 Oct 29 22:28 aws*
+-rw-r--r-- 1 MicroApt 197121   1432 Oct 29 22:28 aws.cmd
+-rw-r--r-- 1 MicroApt 197121    204 Oct 29 22:28 aws_bash_completer
+-rwxr-xr-x 1 MicroApt 197121   1183 Oct 29 22:28 aws_completer*
+-rw-r--r-- 1 MicroApt 197121   1808 Oct 29 22:28 aws_zsh_completer.sh
+-rw-r--r-- 1 MicroApt 197121    393 Oct 29 22:21 deactivate.bat
+-rwxr-xr-x 1 MicroApt 197121   1742 Oct 29 22:27 jp.py*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip.exe*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.11.exe*
+-rwxr-xr-x 1 MicroApt 197121 108421 Oct 29 22:21 pip3.exe*
+-rwxr-xr-x 1 MicroApt 197121 108410 Oct 29 22:28 pyrsa-decrypt.exe*
+-rwxr-xr-x 1 MicroApt 197121 108410 Oct 29 22:28 pyrsa-encrypt.exe*
+-rwxr-xr-x 1 MicroApt 197121 108408 Oct 29 22:28 pyrsa-keygen.exe*
+-rwxr-xr-x 1 MicroApt 197121 108431 Oct 29 22:28 pyrsa-priv2pub.exe*
+-rwxr-xr-x 1 MicroApt 197121 108404 Oct 29 22:28 pyrsa-sign.exe*
+-rwxr-xr-x 1 MicroApt 197121 108408 Oct 29 22:28 pyrsa-verify.exe*
+-rwxr-xr-x 1 MicroApt 197121 274712 Oct 29 22:20 python.exe*
+-rwxr-xr-x 1 MicroApt 197121 263448 Oct 29 22:20 pythonw.exe*
+-rwxr-xr-x 1 MicroApt 197121    641 Oct 29 22:28 rst2html.py*
+-rwxr-xr-x 1 MicroApt 197121    761 Oct 29 22:28 rst2html4.py*
+-rwxr-xr-x 1 MicroApt 197121   1184 Oct 29 22:28 rst2html5.py*
+-rwxr-xr-x 1 MicroApt 197121    838 Oct 29 22:28 rst2latex.py*
+-rwxr-xr-x 1 MicroApt 197121    646 Oct 29 22:28 rst2man.py*
+-rwxr-xr-x 1 MicroApt 197121    811 Oct 29 22:28 rst2odt.py*
+-rwxr-xr-x 1 MicroApt 197121   1773 Oct 29 22:28 rst2odt_prepstyles.py*
+-rwxr-xr-x 1 MicroApt 197121    648 Oct 29 22:28 rst2pseudoxml.py*
+-rwxr-xr-x 1 MicroApt 197121    684 Oct 29 22:28 rst2s5.py*
+-rwxr-xr-x 1 MicroApt 197121    918 Oct 29 22:28 rst2xetex.py*
+-rwxr-xr-x 1 MicroApt 197121    649 Oct 29 22:28 rst2xml.py*
+-rwxr-xr-x 1 MicroApt 197121    717 Oct 29 22:28 rstpep2html.py*
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ aws s3 ls
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ pip freeze
+awscli==1.35.16
+boto3==1.35.50
+botocore==1.35.50
+colorama==0.4.6
+docutils==0.16
+jmespath==1.0.1
+pyasn1==0.6.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.2
+rsa==4.7.2
+s3transfer==0.10.3
+six==1.16.0
+urllib3==2.2.3
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ histroy
+bash: histroy: command not found
+(.venv) 
+MicroApt@DESKTOP-U1P93SM MINGW64 ~/my_python_project01/.venv/Scripts
+$ ^C
+(.venv) 
+Micro

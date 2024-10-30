@@ -1,0 +1,80 @@
+ pwd
+  502  mkdir project1_29
+  503  cd project
+  504  cd project1_29/
+  505  git clone https://github.com/Tech-With-Helen/containers-aws-ecs.git
+  506  ls
+  507  cd containers-aws-ecs/
+  508  ls
+  509  ls -l
+  510  mkdir centos
+  511  mv * centos/
+  512  ls
+  513  mkdir ubuntu
+  514  cd ubuntu/
+  515  ls
+  516  ls
+  517  ls /C
+  518  cp /C/Users/MicroApt/my_dd_project/Dockerfile .
+  519  ls
+  520  cd ..
+  521  git status
+  522  git add .
+  523  git status
+  524  git commit
+  525  git commit -m "checked_in"
+  526  git push
+  527  ls -l
+  528  ls -al
+  529  rm -rf .git
+  530  git init .
+  531  git add
+  532  git add .
+  533  git commit -m "first commit"
+  534  git status
+  535  git log -p
+  536  git remote add https://github.com/aruwalpdhruva/containers-aws-ecs.git
+  537  git remote add origin https://github.com/aruwalpdhruva/containers-aws-ecs.git
+  538  git push
+  539  git push --set-upstream origin master
+  540  git login
+  541  git login aruwalpdhruva
+  542  cd
+  543  cd .ssh/
+  544  ls -al
+  545  cat id_rsa.pub
+  546  git push
+  547  cd
+  548  cd
+  549  ls
+  550  cd project1_29/
+  551  ls -al
+  552  cd containers-aws-ecs/
+  553  git push
+  554  git push --set-upstream origin master
+  555  vi .
+  556  git add .
+  557  git commit -m "removed_secrets"
+  558  git push
+  559  git push --set-upstream origin master
+  560  git log
+  561  ls -l
+  562  ls -al
+  563  rm -rf .git/
+  564  git init .
+  565  git add .
+  566  git commit -m "new_setup"
+  567  git remote add origin https://github.com/aruwalpdhruva/containers-aws-ecs.git
+  568  git push
+  569  git push --set-upstream origin master
+  570  git branch -d main
+  571  git fetch
+  572  git branch -d main
+  573  git branch -d origin/main
+  574  git branch -d origin/main --remote
+  575  git push
+  576*
+  577  git branch -D origin/main --remote
+  578  git commit -m "deleting_main"
+  579  git branch -D -f origin/main --remote
+  580  history
